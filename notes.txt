@@ -1,0 +1,13 @@
+2 use cases likely
+- save a well written message/document it (less likely)
+- save a well written thread/discussion (more likely, focus on this first)
+
+
+
+App flow
+
+1. Listen to specific emoji reaction (if statement on reaction event)
+2. Get channel id + thread_ts/message item ts
+3. Identify parent of thread (https://api.slack.com/messaging/retrieving#threading)
+4. Fetch thread replies (https://api.slack.com/methods/conversations.replies)
+5. Format + save
