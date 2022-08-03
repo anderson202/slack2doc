@@ -8,8 +8,11 @@ app = App(
     signing_secret=os.environ.get("SLACK_SIGNING_SECRET")
 )
 
-# Add functionality here
-# @app.event("app_home_opened") etc
+@app.event("reaction_added")
+def handle_reaction_added_events(client, payload, event, logger, say):
+  print(client.conversations_history)
+  say("reaction added. event => " + str(event))
+    
 
 
 # Start your app

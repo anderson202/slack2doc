@@ -22,3 +22,15 @@ https://ngrok.com/download
 brew install ngrok/ngrok/ngrok
 ```
 
+
+#### nodemon
+
+```
+npm i -g nodemon
+```
+
+
+### Run Service
+```
+./start.sh
+```
